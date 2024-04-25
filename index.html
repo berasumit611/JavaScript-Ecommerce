@@ -2,25 +2,64 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+
+    <link rel="icon" type="image/svg+xml" href="#" />
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+    <!-- font aswome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
     <!-- styles.css -->
-    <link rel="stylesheet" href="styles.css">
-    <title>Ecommerce</title>
+    <link rel="stylesheet" href="style.css">
+
+    <title>JavaScript Ecommerce</title>
   </head>
   <body>
+   <!-- header section start-->
+   <section id="header">
+    <!-- logo -->
+    <a href="#"><img src="img/logo.png" class="logo" alt="logo"></a>
+    <!-- nav link -->
+    <div>
+      <ul id="navbar">
+        <li><a class="active" href="index.html">Home</a></li>
+        <li><a href="shop.html">Shop</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="cart.html"><i class="fa-solid fa-cart-shopping"></i></a></li>
+      </ul>
+    </div>
+   </section>
+   <!-- header section end-->
+
+   <!-- hero section start-->
+   <section id="hero">
+    <h4>Trade-in-offer</h4>
+    <h2>Super value deals</h2>
+    <h1>On all products</h1>
+    <p>Save more with coupons & up to 70% off!</p>
+    <button>Shop Now</button>
+   </section>
+   <!-- hero section end-->
+
+   <!-- feature section start -->
+   <!-- feature section end -->
    
 
 
 
-
-    <!-- js render from main.js -->
-    <div id="app"></div>
+    
 
 
     <!-- script -->
-    <script type="module" src="/main.js"></script>
+    <script src="script.js"></script>
+
+
+    <!-- js render from main.js -->
+    <!-- <div id="app"></div> -->
+    <!-- <script type="module" src="/main.js"></script> -->
 
   </body>
 </html>

@@ -1,0 +1,153 @@
+@import url("https://fonts.googleapis.com/css2?family=Spartan:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Spartan", sans-serif;
+}
+html {
+  scroll-behavior: smooth;
+}
+/* GLOBAL STYLE */
+h1 {
+  font-size: 50px;
+  line-height: 64px;
+  color: #222;
+}
+h2 {
+  font-size: 46px;
+  line-height: 54px;
+  color: #222;
+}
+h4 {
+  font-size: 20px;
+  color: #222;
+}
+h6 {
+  font-weight: 700;
+  font-size: 12px;
+}
+p {
+  font-size: 16px;
+  color: #465b52;
+}
+body {
+  width: 100%;
+}
+.section-p1 {
+  /* section padding */
+  padding: 40px 80px;
+}
+.section-m1 {
+  /* section margin */
+  margin: 40px 0;
+}
+/* ----global variable end--- */
+
+/* 1 */
+/* header section start */
+#header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 20px 80px;
+  background: #e3e6f3;
+
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+    rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    z-index: 9999;
+    position: sticky;
+    top: 0;
+    left: 0;
+}
+/* nav link */
+#header #navbar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#navbar li {
+  list-style: none;
+  padding: 0 20px;
+
+  /* parent elemet relative */
+  position: relative;
+}
+#navbar li a {
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 600;
+  color: #1a1a1a;
+}
+/* nav link hover effecet */
+#navbar li a:hover,
+#navbar li a.active {
+/* active class added for section wise navbar underline */
+
+  color: #088178;
+  /*smooth transition*/
+  transition: 0.3s ease;
+  -webkit-transition: 0.3s ease;
+  -moz-transition: 0.3s ease;
+  -ms-transition: 0.3s ease;
+  -o-transition: 0.3s ease;
+}
+
+/* underline effect using pseudo element */
+#navbar li a.active::after,
+#navbar li a:hover::after{
+    content: "";
+    width: 30%;
+    height: 2px;
+    background: #088178;
+    /* child elemet absolute */
+    position: absolute;
+    bottom: -4px;
+    left: 20px;
+}
+
+/* header section end */
+
+/* hero section start */
+#hero{
+    background-image: url(img/hero4.png);
+
+    /* fullscreen */
+    width: 100%;
+    height: 90vh;
+
+    /* make image center */
+    background-position: top 25% right 0%;
+    background-size: cover;
+
+    padding: 0 80px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+#hero h4{
+    padding-bottom: 15px;
+}
+#hero h1{
+    color: #088178;
+}
+#hero button{
+    background-image: url("img/button.png");
+    background-color: transparent;
+    color: #088178;
+    border: 0;
+    padding: 14px 80px 14px 65px;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 15px;
+    margin-top: 10px;
+}
+/* hero section end */
+
+/* feature section start */
+/* feature section end */
