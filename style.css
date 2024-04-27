@@ -55,8 +55,10 @@ body {
   padding: 20px 80px;
   background: #e3e6f3;
 
+  
   box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
     rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+
     z-index: 9999;
     position: sticky;
     top: 0;
@@ -110,6 +112,7 @@ body {
 
 /* header section end */
 
+/* 2 */
 /* hero section start */
 #hero{
     background-image: url(img/hero4.png);
@@ -150,4 +153,63 @@ body {
 /* hero section end */
 
 /* feature section start */
+#feature{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+#feature .fe-box{
+  width: 180px;
+  text-align: center;
+  padding: 25px 15px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+  margin: 15px 0;
+}
+#feature .fe-box:hover{
+/* adding hover effect */
+box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+#feature .fe-box img{
+  /* make image responsive */
+  width: 100%;
+  margin-bottom: 10px;
+}
+#feature .fe-box h6{
+  padding: 9px 8px 6px 8px ;
+  line-height: 1;
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+  color: #088178;
+  background-color: #fddde4;
+
+   display: inline-block;/*take width as lenght */
+}
+#feature .fe-box:nth-child(2) h6{
+  /* adding different background for different h6 */
+  background-color: #cdebbc;
+}
+#feature .fe-box:nth-child(3) h6{
+  background-color: #f5f5f5;
+
+}
+#feature .fe-box:nth-child(4) h6{
+  background-color: #001f3f;
+
+}
+#feature .fe-box:nth-child(5) h6{
+  background-color: #bfbfbf;
+}
+#feature .fe-box:nth-child(6) h6{
+  background-color: #b3ccc7;
+}
+
 /* feature section end */
