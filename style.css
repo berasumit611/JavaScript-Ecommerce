@@ -483,7 +483,59 @@ box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 /* Text banner section end */
 
 /* News-letter section start */
+#newsletter{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+  background-image: url("img/banner/b14.png");
+  background-repeat: no-repeat;
+  background-position: 20% 30%;
+  background-color: #001f3f;
+}
+#newsletter h4{
+  font-size: 22px;
+  font-weight: 700;
+  color: rgb(255, 255, 255);
+}
+#newsletter p{
+  font-size: 14px;
+  font-weight: 600;
+  color: #465b52;
+}
+#newsletter p span{
+  color: #eeff00;
+}
+#newsletter .form{
+  display: flex;
+  
+  width: 40%;
+}
+#newsletter input{
+  height: 3.125rem;
+  padding: 0 1.25em;
+  font-size: 14px;
+  width: 100%;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+  outline: none;
 
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+#newsletter button{
+  background-color:#088178 ;
+  color: #fff;
+  /* restrict */
+  white-space: nowrap;
+
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
 /* News-letter section end */
 
 
