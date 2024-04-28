@@ -43,6 +43,28 @@ body {
   /* section margin */
   margin: 40px 0;
 }
+
+button.normal{
+   /*buttonglobalstyling*/
+   font-size: 14px;
+   font-weight: 600;
+   padding: 15px 30px;
+   color: #000000;
+   background-color: white;
+   border-radius: 4px;
+   -webkit-border-radius: 4px;
+   -moz-border-radius: 4px;
+   -ms-border-radius: 4px;
+   -o-border-radius: 4px;
+   cursor: pointer;
+   border: none;
+   outline: none;
+   transition: 0.2s;
+   -webkit-transition: 0.2s;
+   -moz-transition: 0.2s;
+   -ms-transition: 0.2s;
+   -o-transition: 0.2s;
+}
 /* ----global variable end--- */
 
 /* 1 */
@@ -305,5 +327,45 @@ box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
 /* feature products section end */
+
+/* call to action banner start */
+#banner{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+  background-image: url("img/banner/b2.jpg");
+  width: 100%;
+  height: 40vh;
+  background-position: center;
+  background-size: cover;
+
+
+ 
+}
+#banner h4{
+  color: #fff;
+  font-size: 16px;
+}
+#banner h2{
+  color: white;
+  font-size: 30px;
+  padding: 10px 0;
+}
+#banner h2  span{
+  color: rgb(216, 67, 67);
+}
+/* button global styling (look above)⬆⬆ */
+
+#banner button:hover{
+  /* adding hover effect to button */
+  background-color:#088178 ;
+  color:#fff;
+}
+/* call to action banner end */
+
+
 
 
