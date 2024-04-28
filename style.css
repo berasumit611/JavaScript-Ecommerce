@@ -425,12 +425,68 @@ box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   padding-bottom:15px ;
 }
 
+/* for white buttom global styling added (look above) ⬆⬆ */
 #sm-banner .banner-box:hover button{
   /* adding hover effect */
   background-color: #088178;
   border: 1px solid #088178;
 }
 /* Two small banner end */
+
+/* Text banner section start */
+#banner3{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 0 80px;
+}
+#banner3 .banner-box{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  text-align: left;
+
+  background-image: url("img/banner/b7.jpg");
+  background-position: center;
+  background-size: cover;
+
+  min-width: 30%;
+  height: 30vh;
+  
+
+  padding: 20px;
+  margin-bottom: 20px;
+}
+#banner3 .banner-box2{
+  background-image: url("img/banner/b4.jpg");
+
+}
+#banner3 .banner-box3{
+  background-image: url("img/banner/b18.jpg");
+
+}
+
+
+#banner3 .banner-box h2{
+  color:white;
+  font-weight: 900;
+  font-size: 22px;
+}
+#banner3 .banner-box h3{
+  color:rgb(204, 79, 79);
+  font-weight: 800;
+  font-size: 15px;
+}
+
+
+/* Text banner section end */
+
+/* News-letter section start */
+
+/* News-letter section end */
+
+
 
 
 
