@@ -148,6 +148,18 @@ button.white{
     left: 20px;
 }
 
+#header #mobile{
+  /* bydefault hide this div */
+      display: none;
+}
+
+
+#close {
+  /* bydefault hide in large screen */
+  display: none;
+}
+
+
 /* header section end */
 
 /* 2 */
@@ -594,7 +606,136 @@ footer .copyright{
 }
 /* FOOTER section end */
 
+/* start Media Query */
+/* TABLET */
+@media (max-width:799px){
+  /* global style start */
+  .section-p1 {
+    /* section padding */
+    padding: 40px 40px;
+  }
+  /* global style end */
 
+  /* header section start */
+  #header #navbar {
+     display: flex;
+     flex-direction: column;
+     align-items:flex-start;
+     justify-content: flex-start;
+     position: fixed;
+     top: 0;
+     /*right: 0;
+     *//*bydefaulthide*/right: -300px;
+     height: 100vh;
+     width: 300px;
+     background-color: rgb(167, 163, 158);
+     padding: 80px 0 0 10px;
+     transition: 0.3s;
+     -webkit-transition: 0.3s;
+     -moz-transition: 0.3s;
+     -ms-transition: 0.3s;
+     -o-transition: 0.3s;
+}
+
+  #header #navbar.active{
+      /* navbar showing  */
+      right: 0;
+
+    }
+  #shop_bag {
+      /* hide shopping cart icon in navbar for smaller device as it already present ouside */
+     display: none;
+      
+  }
+  
+  #header #mobile #bar, #close{
+      cursor: pointer;}
+
+  #close{
+      /* show close i element */
+      display: initial;
+      position: absolute;
+      left: 30px;
+      top: 30px;
+      color: red;
+      font-size: 24px;
+
+        
+    }
+  #navbar li {
+      margin-bottom: 25px;
+    }
+#header #mobile{
+      display: flex;
+      align-items: center;
+    }
+#header #mobile i{
+      color:black;
+      font-size: 24px;
+      padding-left: 20px;
+    }
+  /* header section end */
+
+
+  /* hero section start */
+  #hero{
+    height: 70vh;
+    background-position: top 30% right 30%;
+  }
+  /* hero section end */
+
+  /* feature section start */
+  #feature{
+    justify-content: center;
+  }
+  #feature .fe-box{
+    margin: 15px 15px;
+
+  }
+  /* feature section end */
+
+  /* feature products section start */
+  #product1 .pro-container{
+    justify-content: center;
+  }
+  #product1 .pro{
+    margin: 15px;
+  }
+  /* feature products section end */
+
+  /* call to action banner start */
+  #banner{
+    height: 35vh;
+  }
+  /* call to action banner end */
+
+  /* Two small banner start */
+  #sm-banner .banner-box{
+    min-width: 100%;
+    height:30vh ;
+    /* background-position: right 35% bottom 100%; */
+   
+  }
+  /* Two small banner end */
+
+  /* Text banner section start */
+#banner3{
+  padding: 0 40px;
+}
+#banner3 .banner-box{
+  width: 28%;
+}
+  /* Text banner section end */
+
+/* News-letter section start */
+#newsletter .form{
+
+  width: 70%;
+}
+/* News-letter section end */
+
+}
+/* end Media Query */
 
 
 

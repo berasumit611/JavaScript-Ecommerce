@@ -10,8 +10,9 @@
     <!-- font aswome cdn -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-    <!-- styles.css -->
+    <!-- style.css -->
     <link rel="stylesheet" href="style.css">
+
 
     <title>JavaScript Ecommerce</title>
   </head>
@@ -28,8 +29,16 @@
         <li><a href="blog.html">Blog</a></li>
         <li><a href="about.html">About</a></li>
         <li><a href="contact.html">Contact</a></li>
-        <li><a href="cart.html"><i class="fa-solid fa-cart-shopping"></i></a></li>
+        <li id="shop_bag"><a href="cart.html"><i class="fa-solid fa-cart-shopping"></i></a></li>
+        <i id="close" class="fa-solid fa-x"></i>
       </ul>
+    </div>
+
+    <!-- hamburger menu -->
+    <div id="mobile">
+      <a href="cart.html"><i class="fa-solid fa-cart-shopping"></i></a>
+      <i id="bar" class="fa-solid fa-bars"></i>
+      
     </div>
    </section>
    <!-- header section end-->
