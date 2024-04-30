@@ -905,29 +905,31 @@ footer .copyright{
     text-align: start;
   }
   
-}
-/* single__product page styling start */
+
+
+  /* single__product page styling start */
 #pro_detail{
-display: flex;
-flex-direction: column;
-margin: 0;
-}
-#pro_detail .single_pro_img{
-  width: 100%;
-  margin-bottom: 10px;
-}
-#pro_detail .single_pro_detail{
-  /* *********** */
-  width: 100%;
-  padding: 0;
-}
-#pro_detail .single_pro_detail h4{
-  padding: 10;
-}
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  }
+  #pro_detail .single_pro_img{
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  #pro_detail .single_pro_detail{
+    /* *********** */
+    width: 100%;
+    padding: 0;
+  }
+  #pro_detail .single_pro_detail h4{
+    padding: 10;
+  }
+  
+  /* single__product page styling end*/
 
-/* single__product page styling end*/
 
-
+}
 /* MOBILE end*/
 
 
