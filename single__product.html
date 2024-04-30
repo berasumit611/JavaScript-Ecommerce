@@ -1,0 +1,273 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+
+    <link rel="icon" type="image/svg+xml" href="public/vite.svg" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- font aswome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- style.css -->
+    <link rel="stylesheet" href="style.css">
+
+
+    <title>JavaScript Ecommerce</title>
+  </head>
+  <body>
+   <!-- header section start-->
+   <section id="header">
+    <!-- logo -->
+    <a href="#"><img src="img/logo.png" class="logo" alt="logo"></a>
+    <!-- nav link -->
+    <div>
+      <ul id="navbar">
+        <li><a href="index.html">Home</a></li>
+        <li><a class="active" href="shop.html">Shop</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li id="shop_bag"><a href="cart.html"><i class="fa-solid fa-cart-shopping"></i></a></li>
+        <i id="close" class="fa-solid fa-x"></i>
+      </ul>
+    </div>
+
+    <!-- hamburger menu -->
+    <div id="mobile">
+      <a href="cart.html"><i class="fa-solid fa-cart-shopping"></i></a>
+      <i id="bar" class="fa-solid fa-bars"></i>
+      
+    </div>
+   </section>
+   <!-- header section end-->
+
+
+  <!-- single product details section start -->
+  <section id="pro_detail" class="section-p1">
+    <!-- left -->
+    <div class="single_pro_img">
+        <img src="img/products/f1.jpg" width="100%" id="main_img" alt="">
+
+        <div class="small_img_group">
+            <div class="small_img_col">
+                <img src="img/products/f1.jpg" width="100%" alt="" class="small_img">
+            </div>
+
+            <div class="small_img_col">
+                <img src="img/products/f2.jpg" width="100%" alt="" class="small_img">
+            </div>
+
+            <div class="small_img_col">
+                <img src="img/products/f3.jpg" width="100%" alt="" class="small_img">
+            </div>
+
+            <div class="small_img_col">
+                <img src="img/products/f4.jpg" width="100%" alt="" class="small_img">
+            </div>
+        </div>
+    </div>
+    <!-- right -->
+    <div class="single_pro_detail">
+        <h6>Home / t-shirt</h6>
+        <h4>Men's fashion T Shirts</h4>
+        <h2>$139</h2>
+        <!-- dropdown -->
+        <select name="" id="">
+            <option value="">Select size</option>
+            <option value="">XL</option>
+            <option value="">XXL</option>
+            <option value="">L</option>
+            <option value="">M</option>
+            <option value="">S</option>
+        </select>
+        <!-- input -->
+        <input type="number" value="1">
+        <button class="normal">Add to cart</button>
+        <h4>product details</h4>
+        <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus fugiat officia molestias vitae modi tempora atque pariatur? Unde, nihil nostrum!</span>
+    </div>
+  </section>
+  <!-- single product details section end -->
+
+  <!-- feature products section start -->
+  <section id="product1" class="section-p1">
+    <h2>feature Products</h2>
+    <p>Summer Collection New Modern Design</p>
+    <div class="pro-container">
+      
+      
+
+      <div class="pro">
+        <img src="img/products/f5.jpg" alt="">
+        <div class="des">
+          <span>adidus</span>
+          <h5>Lorem ipsum dolor sit amet.</h5>
+          <div class="star">
+            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+          </div>
+          <h4>$64</h4>
+        </div>
+        <a href=""><i class="fa-solid fa-cart-shopping cart"></i></a>
+      </div>
+
+      <div class="pro">
+        <img src="img/products/f6.jpg" alt="">
+        <div class="des">
+          <span>adidus</span>
+          <h5>Lorem ipsum dolor sit amet.</h5>
+          <div class="star">
+            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+          </div>
+          <h4>$60</h4>
+        </div>
+        <a href=""><i class="fa-solid fa-cart-shopping cart"></i></a>
+      </div>
+
+      <div class="pro">
+        <img src="img/products/f7.jpg" alt="">
+        <div class="des">
+          <span>adidus</span>
+          <h5>Lorem ipsum dolor sit amet.</h5>
+          <div class="star">
+            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+          </div>
+          <h4>$63</h4>
+        </div>
+        <a href=""><i class="fa-solid fa-cart-shopping cart"></i></a>
+      </div>
+
+      <div class="pro">
+        <img src="img/products/f8.jpg" alt="">
+        <div class="des">
+          <span>adidus</span>
+          <h5>Lorem ipsum dolor sit amet.</h5>
+          <div class="star">
+            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+          </div>
+          <h4>$64</h4>
+        </div>
+        <a href=""><i class="fa-solid fa-cart-shopping cart"></i></a>
+      </div>
+    </div>
+   </section>
+   <!-- feature products section end -->
+
+
+  
+   <!-- News-letter section start-->
+   <section id="newsletter" class="section-p1 section-m1">
+    <div class="newstext">
+      <h4>Sign Up For Newsletters</h4>
+      <p>Get Email updates about our latest shop and <span>special offers</span></p>
+    </div>
+
+    <div class="form">
+      <input type="text" placeholder="Your email address">
+      <button class="normal">Sign Up</button>
+    </div>
+
+   </section>
+   <!-- News-letter section end-->
+
+   <!-- FOOTER section start -->
+   <footer class="section-p1">
+     <!-- col1 -->
+    <div class="col">
+      <img class="logo" src="img/logo.png" alt="">
+      <h4>Contact</h4>
+      <p><strong>Address:</strong> Lorem ipsum dolor sit amet consectetur.</p>
+      <p><strong>Phone:</strong>8777245574</p>
+      <p><strong>Hours:</strong> 46578788 mon-sat</p>
+      <div class="follow">
+        <h4>follow us</h4>
+        <div class="icon">
+          <i class="fa-brands fa-facebook"></i>
+          <i class="fa-brands fa-instagram"></i>
+          <i class="fa-brands fa-x-twitter"></i>
+          <i class="fa-brands fa-pinterest"></i>
+          <i class="fa-brands fa-youtube"></i>
+        </div>
+      </div>
+    </div>
+    <!-- col2 -->
+    <div class="col">
+      <h4>About</h4>
+      <a href="">About us</a>
+      <a href="">Delhivery Information</a>
+      <a href="">Privacy Policy</a>
+      <a href="">Terms & Conditions</a>
+      <a href="">Contact Us</a>
+    </div>
+    <!-- col3 -->
+    <div class="col">
+      <h4>My Account</h4>
+      <a href="">Sign In</a>
+      <a href="">View Cart</a>
+      <a href="">My Wishlist</a>
+      <a href="">Track My Order</a>
+      <a href="">Help</a>
+    </div>
+    <!-- col4 -->
+    <div class="col install">
+      <h4>Install App</h4>
+      <p>From App Store or Google Play</p>
+      <div class="row">
+        <img src="img/pay/app.jpg" alt="">
+        <img src="img/pay/play.jpg" alt="">
+      </div>
+      <p>Secured Payment Gateways
+      </p>
+      <img src="img/pay/pay.png" alt="">
+    </div>
+
+    <div class="copyright">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+    </div>
+   </footer>
+   <!-- FOOTER section end -->
+
+
+   <!-- js logic for sliding image -->
+   <script>
+    const lg_img=document.getElementById('main_img');
+    // console.log(lg_img);
+    // const lg_img=document.querySelector.getElementById('main_img');
+    // console.log(lg_img);
+    const sm_img=document.getElementsByClassName('small_img');
+  //   console.log(sm_img);
+  //   return array=>
+  // 0: img.small_img
+  // 1: img.small_img
+  // 2: img.small_img
+  // 3: img.small_img
+
+  // logic if i click sm img its source will replaced to main img
+  for(let i=0;i<sm_img.length;i++){
+
+    sm_img[i].addEventListener('click',()=>{
+    lg_img.src=sm_img[i].src;
+    
+  })
+  }
+  
+   </script>
+
+   
+
+
+
+    
+
+
+    <!-- script -->
+    <script src="script.js"></script>
+
+
+    <!-- js render from main.js -->
+    <!-- <div id="app"></div> -->
+    <!-- <script type="module" src="/main.js"></script> -->
+
+  </body>
+</html>
