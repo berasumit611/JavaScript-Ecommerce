@@ -17,3 +17,7 @@ if(close_btn){
     nav.classList.remove('active')
     })
 }
+
+// single_product.html start
+// single_product.html end
+
