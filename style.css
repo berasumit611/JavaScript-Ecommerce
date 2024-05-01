@@ -709,6 +709,77 @@ footer .copyright{
 
 /* single__product page styling end */
 
+/* blog.html page start */
+#page-header.blog-header{
+  /* override */
+  background-image: url('img/banner/b19.jpg');
+}
+
+#blog{
+  padding: 150px 150px 0 150px;
+}
+#blog .blog-box{
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding-bottom: 90px;
+  position: relative;
+}
+#blog .blog-img{
+  width: 50%;
+  margin-right: 40px;
+}
+#blog .blog-img img{
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+#blog .blog-details{
+  width: 50%;
+}
+#blog .blog-details a{
+  text-decoration: none;
+  font-size: 11px;
+  color: black;
+  font-weight: 700;
+  /*parentelement*/position: relative;
+  transition: 0.3s;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -o-transition: 0.3s;
+}
+#blog .blog-details a::after
+{
+  /* child element */
+  content: "";
+  width: 50px;
+  height: 1px;
+  background-color: black;
+  position:absolute ;
+  top: 4px;
+  right: -60px;
+}
+#blog .blog-details a:hover{
+  color: red;
+}
+#blog .blog-details a:hover::after
+{
+  background-color: red;
+}
+
+#blog .blog-box h1{
+  position: absolute;
+  top: -40px;
+  left: 0;
+  font-size: 70px;
+  font-weight: 700;
+  color: #b6b5b5;
+  z-index: -100;
+}
+/* blog.html page end */
+
+
 
 
 
@@ -848,7 +919,7 @@ footer .copyright{
 }
 /* TABLET end */
 
-/* MOBILE start */
+/* MOBILE start ---------*/
 @media (max-width:477px){
 
   h1 {
@@ -927,6 +998,24 @@ footer .copyright{
   }
   
   /* single__product page styling end*/
+
+/* blog page start */
+#blog{
+  padding: 100px 20px 0 20px;
+}
+#blog .blog-box{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+#blog .blog-img{
+  width: 100%;
+  margin-bottom: 30px;
+}
+#blog .blog-details{
+  width: 100%;
+}
+/* blog page end */
 
 
 }
