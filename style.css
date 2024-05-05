@@ -1131,6 +1131,9 @@ margin-bottom: 30px;
   /* global style end */
 
   /* header section start */
+  #header{
+    height: 15vh;
+  }
   #header #navbar {
      display: flex;
      flex-direction: column;
@@ -1195,7 +1198,7 @@ margin-bottom: 30px;
 
   /* hero section start */
   #hero{
-    height: 90vh;
+    height: 85vh;
     background-position: top 30% right 30%;
   }
   /* hero section end */
