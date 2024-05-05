@@ -15,9 +15,11 @@ body {
   overflow-x: hidden;
 }
 :root{
+  --main-white-color:#ffffff;
   --main-black-color:#141414;
   --main-p-font-colot:#0c0f0a;
   --light-blue-color:#9381ff;
+  --deep-blue-color:#003049;
   --light-bg-color:#dee2ff;
 }
 /* GLOBAL STYLE */
@@ -120,30 +122,26 @@ button.white{
 }
 /* ----global variable end--- */
 
-/* 1 */
+
 /* header section start */
 #header {
+  background-color: var(--main-white-color);
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 20px 80px;
- 
-
   position: sticky; 
   top: 0; 
   z-index: 100; 
-
-  background: rgba(255, 255, 255, 0.5);
+  /* background: rgba(255, 255, 255, 0.5);
   backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(15px);
-  /* border: 1px solid rgba(255,255,255,0.25); */
+  -webkit-backdrop-filter: blur(15px); */
 }
-/* nav link */
 #header #navbar {
   display: flex;
   align-items: center;
   justify-content: center;
- gap: 25px;
+  gap: 25px;
 }
 #navbar li {
   /* parent elemet relative */
@@ -155,28 +153,16 @@ button.white{
   font-size: 15px;
   font-weight: 400;
   padding: 5px 10px;
-  border-radius: 25px;
-  -webkit-border-radius: 25px;
-  -moz-border-radius: 25px;
-  -ms-border-radius: 25px;
-  -o-border-radius: 25px;
-
-
 }
 /* nav link hover effecet */
 #navbar li:not(:nth-last-child(2)) a:hover,
 #navbar li:not(:nth-last-child(2)) a.active {
- 
   color: var(--light-blue-color);
-/* active class added for section wise navbar underline */
-
-
-  /*smooth transition*/
-  transition: 0.3s ease;
-  -webkit-transition: 0.3s ease;
-  -moz-transition: 0.3s ease;
-  -ms-transition: 0.3s ease;
-  -o-transition: 0.3s ease;
+  /*smoothtransition*/transition: 0.5s ease;
+  -webkit-transition: 0.5s ease;
+  -moz-transition: 0.5s ease;
+  -ms-transition: 0.5s ease;
+  -o-transition: 0.5s ease;
 }
 
 /* underline effect using pseudo element */
@@ -193,7 +179,8 @@ button.white{
     left: 0px;
 } */
 
-#navbar #shop_bag i{
+#navbar #shop_bag i,
+#mobile .fa-cart-shopping{
   padding: 10px;
   background-color: var(--light-bg-color);
   border-radius: 50%;
@@ -203,9 +190,7 @@ button.white{
   -o-border-radius: 50%;
 }
 #navbar #shop_bag i:hover,
-#navbar #shop_bag i:active{
-  border: 0.2px solid var(--main-black-color);
-  
+#navbar #shop_bag i:active{ background-color: var(--main-black-color); color: var(--main-white-color); transition: 0.3s ease; -webkit-transition: 0.3s ease; -moz-transition: 0.3s ease; -ms-transition: 0.3s ease; -o-transition: 0.3s ease;
 }
 /* navbar responsive part */
 #header #mobile{
@@ -1149,14 +1134,14 @@ margin-bottom: 30px;
   #header #navbar {
      display: flex;
      flex-direction: column;
-    
-      align-items: center;
-      justify-content: center;
+      align-items: flex-start;
+      justify-content: space-between;
+    gap: 10px;
      position: fixed;
      left: 0;
     
      /*bydefaulthide*/
-     padding: 50px 10px 30px;
+     padding:20px 25px;
      top: -500px;
      height: auto;
      width: 100vw;
@@ -1168,7 +1153,7 @@ margin-bottom: 30px;
      -ms-transition: 0.3s;
      -o-transition: 0.3s;
 
-   background-color: white;
+   background-color: var(--main-white-color);
 }
 
   #header #navbar.active{
@@ -1183,37 +1168,34 @@ margin-bottom: 30px;
   }
   
   #header #mobile #bar, #close{
-      cursor: pointer;}
+      cursor: pointer;
+    }
 
   #close{
       /* show close i element */
       display: initial;
       position: absolute;
-      left: 50%;
-      bottom: 10px;
-
+      top: 20px;
+      right: 25px;
       font-size: 24px;
-
-        
     }
-  #navbar li {
-      margin-bottom: 25px;
-    }
+  
 #header #mobile{
       display: flex;
       align-items: center;
+      gap: 20px;
     }
 #header #mobile i{
-      color:black;
-      font-size: 24px;
-      padding-left: 20px;
+      
+      font-size: 20px;
+      
     }
   /* header section end */
 
 
   /* hero section start */
   #hero{
-    height: 70vh;
+    height: 90vh;
     background-position: top 30% right 30%;
   }
   /* hero section end */
