@@ -1,6 +1,8 @@
 /* google font */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
+
+
 * {
   margin: 0;
   padding: 0;
@@ -13,6 +15,8 @@ html {
 body {
   width: 100%;
   overflow-x: hidden;
+  position: relative;
+
 }
 :root{
   --main-white-color:#ffffff;
@@ -595,6 +599,49 @@ button.white{
 }
 /* News-letter section end */
 
+/* ? Join member section start */
+#member__card{
+  background-color: #ede734;
+
+  font-weight: 600;
+  font-size: 25px;
+  color: var(--main-black-color);
+  text-align: center;
+}
+#member__card button{
+  background-color: var(--main-black-color);
+  color: var(--light-bg-color);
+  margin-left: 15px;
+  position: relative;
+  border-radius: 0%;
+  -webkit-border-radius: 0%;
+  -moz-border-radius: 0%;
+  -ms-border-radius: 0%;
+  -o-border-radius: 0%;
+}
+#member__card button::after{
+  content: "";
+  border-right: 1px solid var(--main-black-color);    border-bottom: 1px solid var(--main-black-color);
+  border-left: 1px solid var(--main-black-color);
+  border-top: 1px solid var(--main-black-color);
+  
+  height: 100%; 
+  width: 100%;
+
+  position: absolute;
+  right: -3px;    
+  bottom:  -3px;    
+}
+#member__card button span{
+  letter-spacing: 1.5px;
+}
+#member__card button i{
+  margin-left: 10px;
+  font-size: 18px;
+  color: var(--light-bg-color);
+}
+/* ? Join member section end */
+
 /* FOOTER section start */
 footer{
   display: flex;
@@ -612,11 +659,11 @@ footer .logo{
   margin-bottom: 30px;
 }
 footer h4{
-  font-size: 14px;
-  padding-bottom: 20px;
+  
+  font-weight: 600;
 }
 footer p{
-  font-size: 13px;
+ 
   margin: 0 0 8px 0;
 }
 footer a{
