@@ -25,6 +25,9 @@ body {
   --light-blue-color:#9381ff;
   --deep-blue-color:#003049;
   --light-bg-color:#dee2ff;
+  --test1:#014921;
+  --test3:red;
+  --test2:#E8E5E5;
 }
 /* GLOBAL STYLE */
 h1,h2,h3,h4,h5,h6,i{
@@ -642,61 +645,105 @@ button.white{
 }
 /* ? Join member section end */
 
-/* FOOTER section start */
-footer{
+/* ! FOOTER section start */
+/* footer{
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-}
-footer .col{
+} */
+/* footer .col{
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   
   margin-bottom: 20px;
-}
-footer .logo{
+} */
+/* footer .logo{
   margin-bottom: 30px;
 }
 footer h4{
   
   font-weight: 600;
-}
-footer p{
+} */
+/* footer p{
  
   margin: 0 0 8px 0;
-}
-footer a{
+} */
+/* footer a{
   font-size: 13px;
   margin: 0 0 8px 0;
 
   text-decoration: none;
   color: #222;
   margin-bottom: 10px;
-}
+} */
 
-footer .follow{
+/* footer .follow{
   margin-top: 20px;
-}
-footer .follow i{
+} */
+/* footer .follow i{
   color: #011322;
   padding-right: 4px;
   cursor: pointer;
   font-size: 20px;
-}
-footer .install .row img{ border: 1px solid #088178; border-radius: 4px; -webkit-border-radius: 4px; -moz-border-radius: 4px; -ms-border-radius: 4px; -o-border-radius: 4px;
+} */
+/* footer .install .row img{ border: 1px solid #088178; border-radius: 4px; -webkit-border-radius: 4px; -moz-border-radius: 4px; -ms-border-radius: 4px; -o-border-radius: 4px;
   margin: 10px 0;
-}
+} */
 
-footer .follow i:hover,
+/* footer .follow i:hover,
 footer a:hover{
   color: rgb(255, 0, 0);
 }
 footer .copyright{
   width: 100%;
   text-align: center;
+} */
+/* ! FOOTER section end */
+
+/* ? NEW FOOTER START */
+footer{
+  background-color: var(--test2);
 }
-/* FOOTER section end */
+footer li{
+  
+font-size: 15px;
+}
+footer li a{
+  color: var(--test1);
+}
+footer >  .row1 > #row1__ul__element{
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-evenly;
+}
+ .products__list,.sports__list,.collections__list,.support__list,.about__company__list{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;  
+}
+.social__link__list{
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+footer .row2{
+  margin-top: 50px;
+width: 100%;
+height: auto;
+
+text-align: center;
+}
+footer .row2 .site_doc span:nth-child(2){
+  margin: 0 10px;
+  padding: 0 10px;
+
+  border-left: 1px solid var(--main-black-color);
+  border-right: 1px solid var(--main-black-color);
+
+}
+/* ? NEW FOOTER END */
+
 
 /* shop page styling start*/
 #page-header{

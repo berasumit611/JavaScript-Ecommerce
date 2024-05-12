@@ -1,476 +1,525 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
 
-    
     <link rel="icon" type="image/svg+xml" href="public/vite.svg" />
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <!-- font aswome cdn -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
 
     <!-- style.css -->
-    <link rel="stylesheet" href="style.css">
-
+    <link rel="stylesheet" href="style.css" />
 
     <title>Emporium</title>
   </head>
   <body>
+    <!-- header section start ✅-->
+    <section id="header">
+      <!-- logo -->
+      <a href="index.html">
+        <img src="custom_logo.png" class="site_logo" alt="logo" />
+      </a>
+      <!-- nav link -->
+      <div>
+        <ul id="navbar">
+          <li><a class="active" href="index.html">Home</a></li>
+          <li><a href="shop.html">Shop</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="TEST.html">TEST</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li id="shop_bag">
+            <a href="cart.html"><i class="fa-solid fa-cart-shopping"></i></a>
+          </li>
+          <i id="close" class="fa-solid fa-x"></i>
+        </ul>
+      </div>
 
-   <!-- header section start ✅-->
-   <section id="header">
-    <!-- logo -->
-    <a href="index.html">
-      <img src="custom_logo.png" class="site_logo" alt="logo">
-    </a>
-    <!-- nav link -->
-    <div>
-      <ul id="navbar">
-        <li><a class="active"  href="index.html">Home</a></li>
-        <li><a  href="shop.html">Shop</a></li>
-        <li><a href="blog.html">Blog</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="TEST.html">TEST</a></li>
-        <li><a href="contact.html">Contact</a>
-        </li>
-        <li id="shop_bag"><a href="cart.html"><i class="fa-solid fa-cart-shopping"></i></a></li>
-        <i id="close" class="fa-solid fa-x"></i>
-      </ul>
-    </div>
+      <!-- hamburger menu -->
+      <div id="mobile">
+        <a href="cart.html"><i class="fa-solid fa-cart-shopping"></i></a>
+        <i id="bar" class="fa-solid fa-bars"></i>
+      </div>
+    </section>
+    <!-- header section end-->
 
-    <!-- hamburger menu -->
-    <div id="mobile">
-      <a href="cart.html"><i class="fa-solid fa-cart-shopping"></i></a>
-      <i id="bar" class="fa-solid fa-bars"></i>
-    </div>
-   </section>
-   <!-- header section end-->
-
-   <!-- hero section start-->
-   <section id="hero">
-    <div class="hero_txt">
+    <!-- hero section start-->
+    <section id="hero">
+      <div class="hero_txt">
         <h4>Trade-In Offer</h4>
-      <h2>Irresistible Dress Deals</h2>
-      <h1>Elevate Your Style</h1>
-      <p>Upgrade your wardrobe with <br>exclusive savings of up to 70% off!</p>
-      <button class="normal">Explore Now</button>
-    </div>
-    <div class="hero_img">
-      <img src="https://images.unsplash.com/photo-1589156229687-496a31ad1d1f?q=80&w=1372&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
-      <img src="https://images.unsplash.com/photo-1603237872873-689ba4191130?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
-    </div>
-    
+        <h2>Irresistible Dress Deals</h2>
+        <h1>Elevate Your Style</h1>
+        <p>
+          Upgrade your wardrobe with <br />exclusive savings of up to 70% off!
+        </p>
+        <button class="normal">Explore Now</button>
+      </div>
+      <div class="hero_img">
+        <img
+          src="https://images.unsplash.com/photo-1589156229687-496a31ad1d1f?q=80&w=1372&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+          alt=""
+        />
+        <img
+          src="https://images.unsplash.com/photo-1603237872873-689ba4191130?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+          alt=""
+        />
+      </div>
+    </section>
+    <!-- hero section end-->
 
-   </section>
-   <!-- hero section end-->
-
-
-   
-   <!-- feature section start -->
-   <section id="feature" class="section-p1">
-    <div class="fe-box">
+    <!-- feature section start -->
+    <section id="feature" class="section-p1">
+      <div class="fe-box">
         <div class="fe-icon"><i class="fas fa-shipping-fast"></i></div>
         <h3>Free Shipping</h3>
-    </div>
-    <div class="fe-box">
+      </div>
+      <div class="fe-box">
         <div class="fe-icon"><i class="fas fa-shopping-cart"></i></div>
         <h3>Online Order</h3>
-    </div>
-    <div class="fe-box">
+      </div>
+      <div class="fe-box">
         <div class="fe-icon"><i class="fas fa-piggy-bank"></i></div>
         <h3>Save Money</h3>
-    </div>
-    <div class="fe-box">
+      </div>
+      <div class="fe-box">
         <div class="fe-icon"><i class="fas fa-gift"></i></div>
         <h3>Promotions</h3>
-    </div>
-    <div class="fe-box">
+      </div>
+      <div class="fe-box">
         <div class="fe-icon"><i class="far fa-smile"></i></div>
         <h3>Happy Sell</h3>
-    </div>
-    <div class="fe-box">
+      </div>
+      <div class="fe-box">
         <div class="fe-icon"><i class="fas fa-headset"></i></div>
         <h3>24X7 Support</h3>
-    </div>
-</section>
-   <!-- feature section end -->
+      </div>
+    </section>
+    <!-- feature section end -->
 
-
-
-   <!-- feature products section start -->
-   <section id="product1" class="section-p1">
-    <h2>feature Products</h2>
-    <p>Summer Collection New Modern Design</p>
-    <div class="pro-container">
-      <div class="pro">
-        <img src="img/products/f1.jpg" alt="">
-        <div class="des">
-          <span>adidus</span>
-          <h5>Lorem ipsum dolor sit amet.</h5>
-          <div class="star">
-            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+    <!-- feature products section start -->
+    <section id="product1" class="section-p1">
+      <h2>feature Products</h2>
+      <p>Summer Collection New Modern Design</p>
+      <div class="pro-container">
+        <div class="pro">
+          <img src="img/products/f1.jpg" alt="" />
+          <div class="des">
+            <span>adidus</span>
+            <h5>Lorem ipsum dolor sit amet.</h5>
+            <div class="star">
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+              ><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+            </div>
+            <h4>$64</h4>
           </div>
-          <h4>$64</h4>
+          <a href=""><i class="fa-solid fa-cart-shopping cart"></i></a>
         </div>
-        <a href=""><i class="fa-solid fa-cart-shopping cart"></i></a>
-      </div>
 
-      <div class="pro">
-        <img src="img/products/f2.jpg" alt="">
-        <div class="des">
-          <span>adidus</span>
-          <h5>Lorem ipsum dolor sit amet.</h5>
-          <div class="star">
-            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+        <div class="pro">
+          <img src="img/products/f2.jpg" alt="" />
+          <div class="des">
+            <span>adidus</span>
+            <h5>Lorem ipsum dolor sit amet.</h5>
+            <div class="star">
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+              ><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+            </div>
+            <h4>$60</h4>
           </div>
-          <h4>$60</h4>
+          <a href=""><i class="fa-solid fa-cart-shopping cart"></i></a>
         </div>
-        <a href=""><i class="fa-solid fa-cart-shopping cart"></i></a>
-      </div>
 
-      <div class="pro">
-        <img src="img/products/f3.jpg" alt="">
-        <div class="des">
-          <span>adidus</span>
-          <h5>Lorem ipsum dolor sit amet.</h5>
-          <div class="star">
-            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+        <div class="pro">
+          <img src="img/products/f3.jpg" alt="" />
+          <div class="des">
+            <span>adidus</span>
+            <h5>Lorem ipsum dolor sit amet.</h5>
+            <div class="star">
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+              ><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+            </div>
+            <h4>$63</h4>
           </div>
-          <h4>$63</h4>
+          <a href=""><i class="fa-solid fa-cart-shopping cart"></i></a>
         </div>
-        <a href=""><i class="fa-solid fa-cart-shopping cart"></i></a>
-      </div>
 
-      <div class="pro">
-        <img src="img/products/f4.jpg" alt="">
-        <div class="des">
-          <span>adidus</span>
-          <h5>Lorem ipsum dolor sit amet.</h5>
-          <div class="star">
-            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+        <div class="pro">
+          <img src="img/products/f4.jpg" alt="" />
+          <div class="des">
+            <span>adidus</span>
+            <h5>Lorem ipsum dolor sit amet.</h5>
+            <div class="star">
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+              ><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+            </div>
+            <h4>$64</h4>
           </div>
-          <h4>$64</h4>
+          <a href=""><i class="fa-solid fa-cart-shopping cart"></i></a>
         </div>
-        <a href=""><i class="fa-solid fa-cart-shopping cart"></i></a>
-      </div>
 
-      <div class="pro">
-        <img src="img/products/f5.jpg" alt="">
-        <div class="des">
-          <span>adidus</span>
-          <h5>Lorem ipsum dolor sit amet.</h5>
-          <div class="star">
-            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+        <div class="pro">
+          <img src="img/products/f5.jpg" alt="" />
+          <div class="des">
+            <span>adidus</span>
+            <h5>Lorem ipsum dolor sit amet.</h5>
+            <div class="star">
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+              ><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+            </div>
+            <h4>$64</h4>
           </div>
-          <h4>$64</h4>
+          <a href=""><i class="fa-solid fa-cart-shopping cart"></i></a>
         </div>
-        <a href=""><i class="fa-solid fa-cart-shopping cart"></i></a>
-      </div>
 
-      <div class="pro">
-        <img src="img/products/f6.jpg" alt="">
-        <div class="des">
-          <span>adidus</span>
-          <h5>Lorem ipsum dolor sit amet.</h5>
-          <div class="star">
-            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+        <div class="pro">
+          <img src="img/products/f6.jpg" alt="" />
+          <div class="des">
+            <span>adidus</span>
+            <h5>Lorem ipsum dolor sit amet.</h5>
+            <div class="star">
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+              ><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+            </div>
+            <h4>$60</h4>
           </div>
-          <h4>$60</h4>
+          <a href=""><i class="fa-solid fa-cart-shopping cart"></i></a>
         </div>
-        <a href=""><i class="fa-solid fa-cart-shopping cart"></i></a>
-      </div>
 
-      <div class="pro">
-        <img src="img/products/f7.jpg" alt="">
-        <div class="des">
-          <span>adidus</span>
-          <h5>Lorem ipsum dolor sit amet.</h5>
-          <div class="star">
-            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+        <div class="pro">
+          <img src="img/products/f7.jpg" alt="" />
+          <div class="des">
+            <span>adidus</span>
+            <h5>Lorem ipsum dolor sit amet.</h5>
+            <div class="star">
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+              ><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+            </div>
+            <h4>$63</h4>
           </div>
-          <h4>$63</h4>
+          <a href=""><i class="fa-solid fa-cart-shopping cart"></i></a>
         </div>
-        <a href=""><i class="fa-solid fa-cart-shopping cart"></i></a>
-      </div>
 
-      <div class="pro">
-        <img src="img/products/f8.jpg" alt="">
-        <div class="des">
-          <span>adidus</span>
-          <h5>Lorem ipsum dolor sit amet.</h5>
-          <div class="star">
-            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+        <div class="pro">
+          <img src="img/products/f8.jpg" alt="" />
+          <div class="des">
+            <span>adidus</span>
+            <h5>Lorem ipsum dolor sit amet.</h5>
+            <div class="star">
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+              ><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+            </div>
+            <h4>$64</h4>
           </div>
-          <h4>$64</h4>
+          <a href=""><i class="fa-solid fa-cart-shopping cart"></i></a>
         </div>
-        <a href=""><i class="fa-solid fa-cart-shopping cart"></i></a>
       </div>
-    </div>
-   </section>
-   <!-- feature products section end -->
+    </section>
+    <!-- feature products section end -->
 
-   <!-- call to action banner start-->
-   <section id="banner" class="section-m1">
-    <h4>Repair Services</h4>
-    <h2>Up to <span>70% off</span> on All t-Shirts & Accessories</h2>
-    <button class="normal">Explore More</button>
-   </section>
-   <!-- call to action banner end-->
+    <!-- call to action banner start-->
+    <section id="banner" class="section-m1">
+      <h4>Repair Services</h4>
+      <h2>Up to <span>70% off</span> on All t-Shirts & Accessories</h2>
+      <button class="normal">Explore More</button>
+    </section>
+    <!-- call to action banner end-->
 
-   <!-- New arrivals section start -->
-   <!-- copy from feature products and change the image -->
-   <section id="product1" class="section-p1">
-    <h2>New Arrivals</h2>
-    <p>Summer Collection New Modern Design</p>
-    <div class="pro-container">
-      <div class="pro">
-        <img src="img/products/n1.jpg" alt="">
-        <div class="des">
-          <span>adidus</span>
-          <h5>Lorem ipsum dolor sit amet.</h5>
-          <div class="star">
-            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+    <!-- New arrivals section start -->
+    <!-- copy from feature products and change the image -->
+    <section id="product1" class="section-p1">
+      <h2>New Arrivals</h2>
+      <p>Summer Collection New Modern Design</p>
+      <div class="pro-container">
+        <div class="pro">
+          <img src="img/products/n1.jpg" alt="" />
+          <div class="des">
+            <span>adidus</span>
+            <h5>Lorem ipsum dolor sit amet.</h5>
+            <div class="star">
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+              ><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+            </div>
+            <h4>$64</h4>
           </div>
-          <h4>$64</h4>
+          <a href=""><i class="fa-solid fa-cart-shopping cart"></i></a>
         </div>
-        <a href=""><i class="fa-solid fa-cart-shopping cart"></i></a>
-      </div>
 
-      <div class="pro">
-        <img src="img/products/n2.jpg" alt="">
-        <div class="des">
-          <span>adidus</span>
-          <h5>Lorem ipsum dolor sit amet.</h5>
-          <div class="star">
-            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+        <div class="pro">
+          <img src="img/products/n2.jpg" alt="" />
+          <div class="des">
+            <span>adidus</span>
+            <h5>Lorem ipsum dolor sit amet.</h5>
+            <div class="star">
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+              ><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+            </div>
+            <h4>$60</h4>
           </div>
-          <h4>$60</h4>
+          <a href=""><i class="fa-solid fa-cart-shopping cart"></i></a>
         </div>
-        <a href=""><i class="fa-solid fa-cart-shopping cart"></i></a>
-      </div>
 
-      <div class="pro">
-        <img src="img/products/n3.jpg" alt="">
-        <div class="des">
-          <span>adidus</span>
-          <h5>Lorem ipsum dolor sit amet.</h5>
-          <div class="star">
-            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+        <div class="pro">
+          <img src="img/products/n3.jpg" alt="" />
+          <div class="des">
+            <span>adidus</span>
+            <h5>Lorem ipsum dolor sit amet.</h5>
+            <div class="star">
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+              ><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+            </div>
+            <h4>$63</h4>
           </div>
-          <h4>$63</h4>
+          <a href=""><i class="fa-solid fa-cart-shopping cart"></i></a>
         </div>
-        <a href=""><i class="fa-solid fa-cart-shopping cart"></i></a>
-      </div>
 
-      <div class="pro">
-        <img src="img/products/n4.jpg" alt="">
-        <div class="des">
-          <span>adidus</span>
-          <h5>Lorem ipsum dolor sit amet.</h5>
-          <div class="star">
-            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+        <div class="pro">
+          <img src="img/products/n4.jpg" alt="" />
+          <div class="des">
+            <span>adidus</span>
+            <h5>Lorem ipsum dolor sit amet.</h5>
+            <div class="star">
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+              ><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+            </div>
+            <h4>$64</h4>
           </div>
-          <h4>$64</h4>
+          <a href=""><i class="fa-solid fa-cart-shopping cart"></i></a>
         </div>
-        <a href=""><i class="fa-solid fa-cart-shopping cart"></i></a>
-      </div>
 
-      <div class="pro">
-        <img src="img/products/n5.jpg" alt="">
-        <div class="des">
-          <span>adidus</span>
-          <h5>Lorem ipsum dolor sit amet.</h5>
-          <div class="star">
-            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+        <div class="pro">
+          <img src="img/products/n5.jpg" alt="" />
+          <div class="des">
+            <span>adidus</span>
+            <h5>Lorem ipsum dolor sit amet.</h5>
+            <div class="star">
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+              ><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+            </div>
+            <h4>$64</h4>
           </div>
-          <h4>$64</h4>
+          <a href=""><i class="fa-solid fa-cart-shopping cart"></i></a>
         </div>
-        <a href=""><i class="fa-solid fa-cart-shopping cart"></i></a>
-      </div>
 
-      <div class="pro">
-        <img src="img/products/n6.jpg" alt="">
-        <div class="des">
-          <span>adidus</span>
-          <h5>Lorem ipsum dolor sit amet.</h5>
-          <div class="star">
-            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+        <div class="pro">
+          <img src="img/products/n6.jpg" alt="" />
+          <div class="des">
+            <span>adidus</span>
+            <h5>Lorem ipsum dolor sit amet.</h5>
+            <div class="star">
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+              ><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+            </div>
+            <h4>$60</h4>
           </div>
-          <h4>$60</h4>
+          <a href=""><i class="fa-solid fa-cart-shopping cart"></i></a>
         </div>
-        <a href=""><i class="fa-solid fa-cart-shopping cart"></i></a>
-      </div>
 
-      <div class="pro">
-        <img src="img/products/n7.jpg" alt="">
-        <div class="des">
-          <span>adidus</span>
-          <h5>Lorem ipsum dolor sit amet.</h5>
-          <div class="star">
-            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+        <div class="pro">
+          <img src="img/products/n7.jpg" alt="" />
+          <div class="des">
+            <span>adidus</span>
+            <h5>Lorem ipsum dolor sit amet.</h5>
+            <div class="star">
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+              ><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+            </div>
+            <h4>$63</h4>
           </div>
-          <h4>$63</h4>
+          <a href=""><i class="fa-solid fa-cart-shopping cart"></i></a>
         </div>
-        <a href=""><i class="fa-solid fa-cart-shopping cart"></i></a>
-      </div>
 
-      <div class="pro">
-        <img src="img/products/n8.jpg" alt="">
-        <div class="des">
-          <span>adidus</span>
-          <h5>Lorem ipsum dolor sit amet.</h5>
-          <div class="star">
-            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+        <div class="pro">
+          <img src="img/products/n8.jpg" alt="" />
+          <div class="des">
+            <span>adidus</span>
+            <h5>Lorem ipsum dolor sit amet.</h5>
+            <div class="star">
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+              ><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+            </div>
+            <h4>$64</h4>
           </div>
-          <h4>$64</h4>
-        </div>
-        <a href=""><i class="fa-solid fa-cart-shopping cart"></i></a>
-      </div>
-    </div>
-   </section>
-   <!-- New arrivals section end -->
-
-   <!-- Two small banner start -->
-   <section id="sm-banner" class="section-p1">
-
-    <div class="banner-box">
-      <h4>crazy deals</h4>
-      <h2>buy 1 get 1 free</h2>
-      <span>Lorem ipsum dolor sit amet.</span>
-      <button class="white">Learn More</button>
-
-    </div>
-
-    <div class="banner-box banner-box2">
-      <h4>spring/summer</h4>
-      <h2>upcomig season</h2>
-      <span>Lorem ipsum dolor sit amet.</span>
-      <button class="white">Collection</button>
-    </div>
-
-   </section>
-   <!-- Two small banner end -->
-
-   <!-- Text banner section start -->
-   <section id="banner3" >
-    <div class="banner-box">
-      <h2>SEASONAL SALE</h2>
-      <h3>winter collection upto 50% off</h3>
-    </div>
-
-    <div class="banner-box banner-box2">
-      <h2>NEW FOOTWARE COLLECTION</h2>
-      <h3>winter collection upto 50% off</h3>
-    </div>
-
-    <div class="banner-box banner-box3">
-      <h2>T-SHIRT</h2>
-      <h3>winter collection upto 50% off</h3>
-    </div>
-
-   </section>
-   <!-- Text banner section end -->
-
-   <!-- News-letter section start-->
-   <section id="newsletter" class="section-p1 section-m1">
-    <div class="newstext">
-      <h4>Sign Up For Newsletters</h4>
-      <p>Get Email updates about our latest shop and <span>special offers</span></p>
-    </div>
-
-    <div class="form">
-      <input type="text" placeholder="Your email address">
-      <button class="normal">Sign Up</button>
-    </div>
-
-   </section>
-   <!-- News-letter section end-->
-  
-   <!--? Join member section start -->
-   <section id="member__card" class="section-p1">
-    <span>Join Emporium and get 15% OFF</span>
-    <button class="normal">
-      <span>SIGN UP FOR FREE</span>
-      <span><i class="fa-solid fa-arrow-right"></i></span>
-    </button>
-   </section>
-   <!--? Join member section end -->
-
-
-
-   <!-- FOOTER section start -->
-   <footer class="section-p1">
-     <!-- col1 -->
-    <div class="col">
-      <img class="site_logo" src="custom_logo.png" alt="">
-      
-      <div class="follow">
-        <h4>follow us</h4>
-        <div class="icon">
-          <i class="fa-brands fa-facebook"></i>
-          <i class="fa-brands fa-instagram"></i>
-          <i class="fa-brands fa-x-twitter"></i>
-          <i class="fa-brands fa-pinterest"></i>
-          <i class="fa-brands fa-youtube"></i>
+          <a href=""><i class="fa-solid fa-cart-shopping cart"></i></a>
         </div>
       </div>
-    </div>
-    <!-- col2 -->
-    <div class="col">
-      <h4>About</h4>
-      <a href="">About us</a>
-      <a href="">Delhivery Information</a>
-      <a href="">Privacy Policy</a>
-      <a href="">Terms & Conditions</a>
-      <a href="">Contact Us</a>
-    </div>
-    <!-- col3 -->
-    <div class="col">
-      <h4>My Account</h4>
-      <a href="">Sign In</a>
-      <a href="">View Cart</a>
-      <a href="">My Wishlist</a>
-      <a href="">Track My Order</a>
-      <a href="">Help</a>
-    </div>
-    <!-- col4 -->
-    <div class="col install">
-      <h4>Install App</h4>
-      <p>From App Store or Google Play</p>
-      <div class="row">
-        <img src="img/pay/app.jpg" alt="">
-        <img src="img/pay/play.jpg" alt="">
+    </section>
+    <!-- New arrivals section end -->
+
+    <!-- Two small banner start -->
+    <section id="sm-banner" class="section-p1">
+      <div class="banner-box">
+        <h4>crazy deals</h4>
+        <h2>buy 1 get 1 free</h2>
+        <span>Lorem ipsum dolor sit amet.</span>
+        <button class="white">Learn More</button>
       </div>
-      <p>Secured Payment Gateways
-      </p>
-      <img src="img/pay/pay.png" alt="">
-    </div>
 
-    <div class="copyright">
-      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-    </div>
-   </footer>
-   <!-- FOOTER section end -->
+      <div class="banner-box banner-box2">
+        <h4>spring/summer</h4>
+        <h2>upcomig season</h2>
+        <span>Lorem ipsum dolor sit amet.</span>
+        <button class="white">Collection</button>
+      </div>
+    </section>
+    <!-- Two small banner end -->
 
+    <!-- Text banner section start -->
+    <section id="banner3">
+      <div class="banner-box">
+        <h2>SEASONAL SALE</h2>
+        <h3>winter collection upto 50% off</h3>
+      </div>
 
+      <div class="banner-box banner-box2">
+        <h2>NEW FOOTWARE COLLECTION</h2>
+        <h3>winter collection upto 50% off</h3>
+      </div>
 
+      <div class="banner-box banner-box3">
+        <h2>T-SHIRT</h2>
+        <h3>winter collection upto 50% off</h3>
+      </div>
+    </section>
+    <!-- Text banner section end -->
 
-   
+    <!-- News-letter section start-->
+    <section id="newsletter" class="section-p1 section-m1">
+      <div class="newstext">
+        <h4>Sign Up For Newsletters</h4>
+        <p>
+          Get Email updates about our latest shop and
+          <span>special offers</span>
+        </p>
+      </div>
 
+      <div class="form">
+        <input type="text" placeholder="Your email address" />
+        <button class="normal">Sign Up</button>
+      </div>
+    </section>
+    <!-- News-letter section end-->
 
+    <!--? Join member section start -->
+    <section id="member__card" class="section-p1">
+      <span>Join Emporium and get 15% OFF</span>
+      <button class="normal">
+        <span>SIGN UP FOR FREE</span>
+        <span><i class="fa-solid fa-arrow-right"></i></span>
+      </button>
+    </section>
+    <!--? Join member section end -->
 
-    
+    <!-- FOOTER section start -->
+    <footer class="section-p1">
+      <div class="row1">
+        <ul id="row1__ul__element">
+          <li>
+            <h4>PRODUCTS</h4>
+            <ul class="products__list">
+              <li><a href="#">Footwear</a></li>
+              <li><a href="#">Clothing</a></li>
+              <li><a href="#">Accessories</a></li>
+              <li></li>
+              <li><a href="#">Outlet Sale</a></li>
+              <li><a href="#">New Arrivals</a></li>
+              <li><a href="#">Special Offer</a></li>
+              <li><a href="#">Flat 50% Off!</a></li>
+            </ul>
+          </li>
 
+          <li>
+            <h4>SPORTS</h4>
+            <ul class="sports__list">
+              <li><a href="#">Cricket</a></li>
+              <li><a href="#">Running</a></li>
+              <li><a href="#">Football</a></li>
+              <li><a href="#">Gym/Training</a></li>
+              <li><a href="#">Tennis</a></li>
+              <li><a href="#">Outdoor</a></li>
+              <li><a href="#">Basketball</a></li>
+              <li><a href="#">Swimming</a></li>
+              <li><a href="#">Skateboarding</a></li>
+            </ul>
+          </li>
+
+          <li>
+            <h4>COLLECTONS</h4>
+            <ul class="collections__list">
+              <li><a href="#">Ultraboost</a></li>
+              <li><a href="#">Superstar</a></li>
+              <li><a href="#">NMD</a></li>
+              <li><a href="#">Stan Smith</a></li>
+              <li><a href="#">Sustainability</a></li>
+              <li><a href="#">Predator</a></li>
+              <li><a href="#">Parley</a></li>
+              <li><a href="#">Adicolor</a></li>
+            </ul>
+          </li>
+
+          <li>
+            <h4>SUPPORT</h4>
+            <ul class="support__list">
+              <li><a href="#">Help</a></li>
+              <li><a href="#">Customer Services</a></li>
+              <li><a href="#">Returns & Exchanges</a></li>
+              <li><a href="#">Shipping</a></li>
+              <li><a href="#">Order Tracker</a></li>
+              <li><a href="#">Store Finder</a></li>
+              <li><a href="#">Running Shoe Finder</a></li>
+              <li><a href="#">Bra Fit Guide</a></li>
+              <li><a href="#">adiClub</a></li>
+              <li><a href="#">adiclub Terms and conditions</a></li>
+            </ul>
+          </li>
+          <li>
+            <h4 style="word-break: break-all">COMPANY INFO</h4>
+            <ul class="about__company__list">
+              <li><a href="#">About Us</a></li>
+              <li><a href="#">adidas stories</a></li>
+              <li><a href="#">adidas Apps</a></li>
+              <li><a href="#">Entity Details</a></li>
+              <li><a href="#">Press</a></li>
+              <li><a href="#">Careers</a></li>
+            </ul>
+          </li>
+          <li>
+            <h4>FOLLOW US</h4>
+            <ul class="social__link__list">
+              <li><a href="#"><i class="fa-brands fa-x-twitter"></i></a></li>
+              <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+              <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+
+      <div class="row2">
+        <div class="site_doc">
+          <span>Privacy Policy</span>
+          <span>Terms and Conditions</span>
+          <span>Cookies</span>
+        </div>
+        <div class="site_info">
+          <span>©2024 emporium India Marketing Pvt. Ltd</span>
+        </div>
+      </div>
+    </footer>
+    <!-- FOOTER section end -->
 
     <!-- script -->
     <script src="script.js"></script>
 
-
     <!-- js render from main.js -->
     <!-- <div id="app"></div> -->
     <!-- <script type="module" src="/main.js"></script> -->
-
   </body>
 </html>
